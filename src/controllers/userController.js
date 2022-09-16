@@ -1,16 +1,9 @@
 import userService from '../services/userServices';
 let handleLogin = async (req, res) => {
-    //tra ve chuoi string
-    //api giao tiep giua server va server
+   
     let email = req.body.email;
     let password = req.body.password;
-    //check email người dùng tồn tại ko
-    //compared password
-    //có hai ngoại lệ
-    //lỗi 1: email ko có trong hệ thống
-    //lỗi 2: pass sai
-    // sửa cơ sở dữ liệu, trả lại userInfo
-    // access_token: JWT, mỗi một api ,json web token cơ chế bảo mật web
+  
 
     if (!email || !password) {
         return res.status(500).json({
