@@ -18,8 +18,7 @@ let initWebRoutes = (app) => {
 
 
     router.post('/api/login', userController.handleLogin)
-    //lý do dùng get ở delete-crud? server nodejs hiểu method get, 
-    // put-crud
+    
 
     router.get('/api/get-all-users',userController.handleGetAllUsers);
 
